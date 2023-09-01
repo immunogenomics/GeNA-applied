@@ -1,10 +1,10 @@
 # In this repository
 We provide code and analyses supporting the `GeNA` manuscript. In this work, we:
-- apply `GeNA` to real single-cell profiling and simulated genotypes to evaluate `GeNA`'s calibration (type I error) and statsitical power (type II error)
-- apply `GeNA` to identify cell state abundance QTLs (csaQTLs) in the OneK1K dataset
-- evaluate the replication by `GeNA` of csaQTLs previously identified using flow cytometry
-- evaluate the replication of csaQTLs from the OneK1K discovery cohort in five replication cohorts
-- examine cell state abundance associations to polygenic risk scores using CNA
+- Apply `GeNA` to real single-cell profiling and simulated genotypes to evaluate `GeNA`'s calibration (type I error) and statsitical power (type II error)
+- Apply `GeNA` to identify cell state abundance QTLs (csaQTLs) in the OneK1K dataset
+- Evaluate the replication by `GeNA` of csaQTLs previously identified using flow cytometry
+- Evaluate the replication of csaQTLs from the OneK1K discovery cohort in five replication cohorts
+- Examine cell state abundance associations to polygenic risk scores using CNA
 
 # Citation
 The `GeNA` manuscript can be found and cited at
