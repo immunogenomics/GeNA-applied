@@ -1,0 +1,76 @@
+Sender: LSF System <lsfadmin@cn045>
+Subject: Job 777864: <gwas_allcells> Done
+
+Job <gwas_allcells> was submitted from host <cn004> by user <lar24> in cluster <cmucluster>.
+Job was executed on host(s) <cn045>, in queue <big>, as user <lar24> in cluster <cmucluster>.
+</PHShome/lar24> was used as the home directory.
+</data/srlab/lrumker/MCSC_Project/cna-qtl/GeNA> was used as the working directory.
+Started at Fri Sep  1 15:26:01 2023
+Results reported at Fri Sep  1 15:39:04 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./GeNA.sh -s /data/srlab/lrumker/datasets/onek1k/pheno/allcells.h5ad -b 'True' -g /data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr -o /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_allcells/ -c age,sex_M,gPC1,gPC2,gPC3,gPC4,gPC5,gPC6
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1360.39 sec.
+    Max Memory :      6125 MB
+    Max Swap   :    129381 MB
+
+    Max Processes  :         4
+    Max Threads    :        28
+
+The output (if any) follows:
+
+Arguments provided:
+Genotypes: /data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr 
+Single-cell data object: /data/srlab/lrumker/datasets/onek1k/pheno/allcells.h5ad 
+Output folder: /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_allcells/ 
+Correct for batch: True 
+Covariates: age,sex_M,gPC1,gPC2,gPC3,gPC4,gPC5,gPC6
+Values of k: Default
+
+
+Formatting input for PLINK
+PLINK v2.00a2.3LM 64-bit Intel (24 Jan 2020)   www.cog-genomics.org/plink/2.0/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_allcells/plink_per_nampc/NAM.log.
+Options in effect:
+  --glm
+  --out /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_allcells/plink_per_nampc/NAM
+  --pfile /data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr
+  --pheno /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_allcells/nampcs.csv
+  --require-pheno
+
+Start time: Fri Sep  1 15:26:24 2023
+258208 MiB RAM detected; reserving 129104 MiB for main workspace.
+Using up to 24 threads (change this with --threads).
+972 samples (0 females, 0 males, 972 ambiguous; 972 founders) loaded from
+/data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr.psam.
+6437505 variants loaded from
+/data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr.pvar.
+49 quantitative phenotypes loaded.
+--require-pheno: 3 samples removed.
+969 samples (0 females, 0 males, 969 ambiguous; 969 founders) remaining after
+main filters.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+--glm linear regression on quantitative phenotypes #1-49: 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+Results written to
+/data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_allcells/plink_per_nampc/NAM.<phenotype
+name>.glm.linear .
+End time: Fri Sep  1 15:30:20 2023
+Gathering metrics across NAM-PCs
+Performing multi-NAM-PC tests
+Assembling GeNA results file
+
+
+PS:
+
+Read file </data/srlab/lrumker/MCSC_Project/cna-qtl/GeNA-applied/run_gwas/out/gwas_allcells.err> for stderr output of this job.
+
