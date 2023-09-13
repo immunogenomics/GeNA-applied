@@ -63,7 +63,7 @@ for sel_chr in np.arange(1,23):
     G_chr = [int(G_meta.index[i].split(":")[0]) for i in np.arange(G_meta.shape[0])]
     G = G.loc[G_chr==sel_chr,:]
     G_meta = G_meta.loc[G_chr==sel_chr,:]
-    res['MAF'] = G_meta.loc[res.ID.values,'MAF'].values
+    res['MAF'] = G_meta.reindex(index=res.ID.values).loc[:,'MAF'].values #G_meta.loc[res.ID.values,'MAF'].values
     res['MAF'] = [float(res.MAF.values[i]) for i in np.arange(res.shape[0])]
 
     # Sort G and res into decreasing order by p-value

@@ -1,5 +1,4 @@
 #!/bin/bash
-debug=1 #un-commenting this line will cause script to execute commands rather than submitting
 
 # This script calls a function to define independent loci and their respsective lead SNPs among the
 # GeNA csaQTL summary statistics. Then, it calls a function to add genotype information for                       
@@ -7,7 +6,7 @@ debug=1 #un-commenting this line will cause script to execute commands rather th
 
 p_thresh=5e-08
 
-for celltype in "NK" "Myeloid"
+for celltype in "Myeloid" "NK"
 do
     outfile="/data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_${celltype}/gwas_loci.tsv"
     gwas_res="/data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_${celltype}/GeNA_sumstats.txt"

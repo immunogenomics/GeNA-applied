@@ -20,7 +20,7 @@ done
 module load samtools
 module load bcftools
 
-for celltype in "NK"
+for celltype in "Myeloid" "NK"
 do
     snplist="/data/srlab/lrumker/MCSC_Project/cna-qtl/results/geno_munge/sig_snps/${celltype}.tsv"
     infile="/data/srlab/lrumker/datasets/onek1k/geno/1K1K.phased.all_chr.phased.mm3.imputed.dose.snpQC_MAF5.renamed.vcf.gz"

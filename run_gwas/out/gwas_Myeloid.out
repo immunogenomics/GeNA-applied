@@ -1,12 +1,12 @@
-Sender: LSF System <lsfadmin@cn044>
-Subject: Job 777865: <gwas_Myeloid> Done
+Sender: LSF System <lsfadmin@cmu124>
+Subject: Job 806119: <gwas_Myeloid> Done
 
 Job <gwas_Myeloid> was submitted from host <cn004> by user <lar24> in cluster <cmucluster>.
-Job was executed on host(s) <cn044>, in queue <big>, as user <lar24> in cluster <cmucluster>.
+Job was executed on host(s) <cmu124>, in queue <big>, as user <lar24> in cluster <cmucluster>.
 </PHShome/lar24> was used as the home directory.
 </data/srlab/lrumker/MCSC_Project/cna-qtl/GeNA> was used as the working directory.
-Started at Fri Sep  1 15:26:01 2023
-Results reported at Fri Sep  1 15:34:00 2023
+Started at Thu Sep  7 14:39:31 2023
+Results reported at Thu Sep  7 14:50:16 2023
 
 Your job looked like:
 
@@ -19,12 +19,12 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time   :    717.66 sec.
-    Max Memory :      3882 MB
-    Max Swap   :    129381 MB
+    CPU time   :    985.29 sec.
+    Max Memory :      2369 MB
+    Max Swap   :     48639 MB
 
-    Max Processes  :         4
-    Max Threads    :        28
+    Max Processes  :        92
+    Max Threads    :        93
 
 The output (if any) follows:
 
@@ -38,6 +38,7 @@ Values of k: Default
 
 
 Formatting input for PLINK
+plink2 --pfile /data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr --pheno /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_Myeloid/nampcs.csv --glm --prune --out /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_Myeloid/plink_per_nampc/NAM
 PLINK v2.00a2.3LM 64-bit Intel (24 Jan 2020)   www.cog-genomics.org/plink/2.0/
 (C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
 Logging to /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_Myeloid/plink_per_nampc/NAM.log.
@@ -48,9 +49,9 @@ Options in effect:
   --pheno /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_Myeloid/nampcs.csv
   --require-pheno
 
-Start time: Fri Sep  1 15:26:05 2023
-258208 MiB RAM detected; reserving 129104 MiB for main workspace.
-Using up to 24 threads (change this with --threads).
+Start time: Thu Sep  7 14:39:38 2023
+96728 MiB RAM detected; reserving 48364 MiB for main workspace.
+Using up to 12 threads (change this with --threads).
 972 samples (0 females, 0 males, 972 ambiguous; 972 founders) loaded from
 /data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr.psam.
 6437505 variants loaded from
@@ -64,7 +65,7 @@ Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%
 Results written to
 /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_Myeloid/plink_per_nampc/NAM.<phenotype
 name>.glm.linear .
-End time: Fri Sep  1 15:27:54 2023
+End time: Thu Sep  7 14:42:02 2023
 Gathering metrics across NAM-PCs
 Performing multi-NAM-PC tests
 Assembling GeNA results file
