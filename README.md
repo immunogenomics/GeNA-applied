@@ -1,6 +1,8 @@
 # In this repository
-We provide code and analyses supporting the `GeNA` manuscript. In this work, we:
+We provide code and analyses supporting the `GeNA` manuscript. We provide scripts to:
 - Apply `GeNA` to real single-cell profiling and simulated genotypes to evaluate `GeNA`'s calibration (type I error, see `null` folder) and statsitical power (type II error, see `nonnull_sims` folder)
+- Test associations to each lead SNP in single-cell objects with cis-genes removed (see `mask_cis_genes`)
+- Perform GWAS of cluster-based cell type proportion traits for comparison (see `cluster_gwas`)
 - Apply `GeNA` to identify cell state abundance QTLs (csaQTLs) in the OneK1K dataset (see `run_gwas` folder)
 - Evaluate the replication by `GeNA` of csaQTLs previously identified using flow cytometry
 - Evaluate the replication of csaQTLs from the OneK1K discovery cohort in five replication cohorts
