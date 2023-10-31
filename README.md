@@ -1,7 +1,7 @@
 # In this repository
 We provide code and analyses supporting the `GeNA` manuscript. We provide scripts to:
-- Apply `GeNA` to real single-cell profiling and simulated genotypes to evaluate `GeNA`'s calibration (type I error, see `null` folder) and statsitical power (type II error, see `nonnull_sims` folder)
-- Apply `GeNA` to identify cell state abundance QTLs (csaQTLs) in the OneK1K dataset (see `run_gwas` and `leadsnps_perm` folders)
+- Apply `GeNA` to real single-cell profiling and simulated genotypes to evaluate `GeNA`'s calibration (type I error, see `null` folder) and statsitical power (see `nonnull_sims` folder)
+- Apply `GeNA` to identify cell state abundance QTLs (csaQTLs) in the OneK1K dataset (see `run_gwas`, `leadsnps_perm`, `suggestive_loci`, `retest_subcohorts` folders)
 - Test associations to each lead SNP in single-cell objects with cis-genes removed (see `mask_cis_genes`)
 - Perform GWAS of cluster-based cell type proportion traits for comparison (see `cluster_gwas`)
 - Evaluate the replication by `GeNA` of csaQTLs previously identified using flow cytometry
@@ -23,4 +23,4 @@ All datasets used in these analyses are previously published:
 4. Randolph, H. E. et al. Genetic ancestry effects on the response to viral infection are pervasive but cell type specific. Science 374, 1127–1133 (2021).
 
 # Contact
-Please contact Laurie Rumker (Laurie_Rumker@hms.harvard.edu) with any questions about these analyses.
+Please contact Laurie Rumker (Laurie_Rumker AT hms.harvard.edu) with any questions about these analyses.
