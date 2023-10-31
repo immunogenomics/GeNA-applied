@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # This script reformats the per-SNP sample-level phenotype file output from GeNA into
-# PLINK(1) format phenotype files per SNP. Then it calls PLINK to generate fixed-
-# phenotype summary statistics for each locus.
+# PLINK(1) format phenotype files per lead SNP. Then it calls PLINK to generate fixed-
+# phenotype summary statistics for each csaQTL.
 
 for celltype in "NK" "Myeloid"
 do

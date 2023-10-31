@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script converts the permutation-filled vcf files per lead SNP to pgen format for use as input to GeNA
+# This script converts the vcf file per lead SNP containing permutations of the genotype values across samples to pgen format for use as input to GeNA
 
 module load plink
 

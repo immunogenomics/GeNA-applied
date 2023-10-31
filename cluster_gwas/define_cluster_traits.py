@@ -1,4 +1,10 @@
 # Defines cluster-based cell type proportion trait values per individual in the OneK1K dataset  
+# For each major cell type (T, B, NK, myeloid, all cells) we compute the fractional abundance
+# of each cluster out of 1) all cells, and 2) all cells of the corresponding major cell type.
+# We computed pairwise correlations among all these traits and selected one from each pair
+# with r-squared > 0.7 for removal in order to maximize the total remaining trait count.
+# We also include only traits with nonzero values for at least 200 individuals.
+# Values per individual for all retained traits were inverse-normal transformed.
 
 import numpy as np
 import pandas as pd

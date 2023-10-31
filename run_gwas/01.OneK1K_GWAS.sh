@@ -2,7 +2,7 @@
 #debug=1 #un-commenting this line will cause script to execute commands rather than submitting            
 
 # This script applies GeNA to perform one GWAS for csaQTLs in each of five single-cell objects,
-# each corresponding to a different denominator of included cells (T, B, NK, Myeloid or all cells)
+# each corresponding to a different denominator of included cells (T, B, NK, myeloid or all cells)
 
 pwd=$(eval "pwd")
 path_to_GeNA="/data/srlab/lrumker/MCSC_Project/cna-qtl/GeNA"

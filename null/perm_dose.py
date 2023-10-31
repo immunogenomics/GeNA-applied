@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 np.random.seed(0)
 
-# Parse Arguments                                                                                                                                                                                 
+# Parse Arguments                                                                                                                                
 parser = argparse.ArgumentParser()
 parser.add_argument("--infile",type=str)
 parser.add_argument("--outfile",type=str)

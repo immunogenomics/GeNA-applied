@@ -7,7 +7,7 @@
 #       Only clusters uncorrelated with batch (Pearson’s r2 < 0.25 to any batch)
 #       Only clusters with representation of at least 50 cells from at least 100 samples
 #
-# Cell type specific gene expression programs: top [n_celltype_PCs] gene expression PCs amongn cells in the cluster
+# Cell type specific gene expression programs: top [n_celltype_PCs] gene expression PCs among cells in the cluster
 #       Only for clusters that passed the QC metrics for cluster abundance traits
 
 import argparse
@@ -26,6 +26,8 @@ parser.add_argument("--sc_object",type=str)
 parser.add_argument("--outfile",type=str)
 parser.add_argument("--n_hPCs",type=int,default=10)
 parser.add_argument("--n_celltype_PCs",type=int,default=3)
+parser.add_argument("--clustQC_minsamples",type=int,default=100)
+parser.add_argument("--clustQC_mincells",type=str,default=50)
 args = parser.parse_args()
 print('\n\n****')
 print(args)
@@ -48,7 +50,7 @@ for celltype in celltypes:
     d.obs["count_"+celltype] = 1*(d.obs[celltype_col].values==celltype)
 trait_candidates = ["count_"+celltypes[i] for i in np.arange(len(celltypes))]
 d.obs_to_sample(trait_candidates, aggregate = np.sum)
-keep = np.sum(d.samplem[trait_candidates]>50, axis=0).values>100
+keep = np.sum(d.samplem[trait_candidates]>args.clustQC_mincells, axis=0).values>args.clustQC_minsamples
 trait_candidates = np.array(trait_candidates)[keep]
 celltypes = [trait_candidates[i].split("count_")[1] for i in np.arange(len(trait_candidates))]
 print("Retained celltype clusters:")

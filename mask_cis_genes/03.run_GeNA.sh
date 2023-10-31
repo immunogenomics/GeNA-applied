@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Apply GeNA to re-test the association to the lead SNP, using the masked data object
+# Apply GeNA to test the association to the lead SNP in the cis-masked data object
 
 path_to_GeNA="/data/srlab/lrumker/MCSC_Project/cna-qtl/GeNA"
 cd $path_to_GeNA

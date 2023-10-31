@@ -1,5 +1,6 @@
 # This script splits the default spheno output for our dataset (with sample IDs formatted as FID_IID)
-# to prepare these data as input to plink
+# to prepare these data as input to PLINK
+
 import argparse
 import pandas as pd
 import numpy as np

@@ -1,12 +1,12 @@
-Sender: LSF System <lsfadmin@cn007>
-Subject: Job 806121: <gwas_B> Done
+Sender: LSF System <lsfadmin@cn044>
+Subject: Job 940400: <gwas_B> Done
 
 Job <gwas_B> was submitted from host <cn004> by user <lar24> in cluster <cmucluster>.
-Job was executed on host(s) <cn007>, in queue <big>, as user <lar24> in cluster <cmucluster>.
+Job was executed on host(s) <cn044>, in queue <big>, as user <lar24> in cluster <cmucluster>.
 </PHShome/lar24> was used as the home directory.
 </data/srlab/lrumker/MCSC_Project/cna-qtl/GeNA> was used as the working directory.
-Started at Thu Sep  7 14:40:14 2023
-Results reported at Thu Sep  7 14:48:22 2023
+Started at Wed Oct 25 22:29:36 2023
+Results reported at Wed Oct 25 22:36:18 2023
 
 Your job looked like:
 
@@ -19,9 +19,9 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time   :    644.14 sec.
-    Max Memory :      3002 MB
-    Max Swap   :     64744 MB
+    CPU time   :    617.93 sec.
+    Max Memory :      2287 MB
+    Max Swap   :    129380 MB
 
     Max Processes  :        65
     Max Threads    :        66
@@ -49,8 +49,8 @@ Options in effect:
   --pheno /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_B/nampcs.csv
   --require-pheno
 
-Start time: Thu Sep  7 14:40:27 2023
-128936 MiB RAM detected; reserving 64468 MiB for main workspace.
+Start time: Wed Oct 25 22:29:51 2023
+258208 MiB RAM detected; reserving 129104 MiB for main workspace.
 Using up to 24 threads (change this with --threads).
 972 samples (0 females, 0 males, 972 ambiguous; 972 founders) loaded from
 /data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr.psam.
@@ -65,7 +65,7 @@ Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%
 Results written to
 /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_B/plink_per_nampc/NAM.<phenotype
 name>.glm.linear .
-End time: Thu Sep  7 14:42:00 2023
+End time: Wed Oct 25 22:31:14 2023
 Gathering metrics across NAM-PCs
 Performing multi-NAM-PC tests
 Assembling GeNA results file

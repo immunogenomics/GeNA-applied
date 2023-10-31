@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script subsets the GeNA summary statistics file to a cis window (+/- 1MB)
-# around each lead SNP.
+# around the lead SNP for each csaQTL.
 
 celltypes=( "Myeloid" "NK" "NK" "NK" "NK")
 lead_snps=( "15:80263217:C:T" "2:111851212:C:T" "11:128070535:A:G" "12:10583611:C:T" "19:16441973:G:A")

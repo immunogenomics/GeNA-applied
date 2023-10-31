@@ -5,7 +5,7 @@
 nperm=200
 n_header=15
 
-for celltype in "Myeloid" "B" "T" "NK" "allcells"
+for celltype in "Myeloid" "B" "T" "NK" "allcells" # Process becomes parallel across cell types but with a shared set seed the permutations are equivalent across types
 do
     nampc_file="/data/srlab/lrumker/datasets/onek1k/pheno/nampcs/${celltype}_batch_covs.csv"
     

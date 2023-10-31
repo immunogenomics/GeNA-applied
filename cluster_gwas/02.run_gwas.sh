@@ -1,7 +1,7 @@
 #!/bin/bash
 #debug=1
 
-# Applies PLINK to GWAS for cluster abundance traits
+# Applies PLINK to run one GWAS for each cluster abundance trait
 # Considers age, sex, gPC1-6 as covariates
 # Excludes individuals without phenotypes available for the trait (--prune)
 
@@ -25,7 +25,7 @@ do
     echo $command    
     if [ -z "$debug" ]
     then
-	mkdir -p out
+	mkdir -p ${srcfolder}out
 	name="T${n_trait}"
 	bsub -J $name -q big \
 	    -oo ${srcfolder}out/${name}.out \

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # This script generates one vcf file per lead SNP containing nperm permutations of the observed
-# genotypes values for that lead SNP across all samples
+# genotypes values for that lead SNP across samples
 
-nperm=1000000 #1e-06
+nperm=1000000
 n_header=15
 
 lead_snps=( "15:80263217:C:T" "2:111851212:C:T" "11:128070535:A:G" "12:10583611:C:T" "19:16441973:G:A" )

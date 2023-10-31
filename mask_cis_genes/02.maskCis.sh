@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Generates a single-cell object lacking any variable genes from the discovery data
+# Generates a single-cell object that drops information for any variable genes from the discovery data
 # object that lie within a 2MB cis window around the lead SNP
 # Defines the phenotype most correlated with the lead SNP in the masked object
 

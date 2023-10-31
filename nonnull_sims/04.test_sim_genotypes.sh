@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script runs GeNA for each genotype simulate within the corresponding single-cell data object
+# This script runs GeNA in a csaQTL gwas for each cell type, using the simulated genotypes with true associations
 
 path_to_GeNA="/data/srlab/lrumker/MCSC_Project/cna-qtl/GeNA"
 cd $path_to_GeNA

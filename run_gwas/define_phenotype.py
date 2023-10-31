@@ -5,6 +5,7 @@
 #
 # Inputs
 #     sc_object: filepath to a single-cell data object in multianndata format
+#           Expected to include alternative allele genotype doses for all snps of interest in the samplem dataframe
 #     covs: covariates included in the GeNA GWAS, formatted as "cov1,cov2,cov3"; must correspond to columns in the samplem dataframe within the single-cell data object
 #     loci: filepath to a GeNA summary statistics file; phenotypes will be defined for all SNPs in the file (usually these are previously refined to represent lead SNPs)
 #     outfile_path: filepath to a location where all results objects will be stored

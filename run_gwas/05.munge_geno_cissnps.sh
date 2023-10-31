@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# This script produces genotype files for each listed (lead) SNP containing information
-# about all SNPs with MAF > 1% in a 2MB window centered on the selected SNP.
+# This script produces a genotype file for each csaQTL (indexed by lead SNP) containing information
+# about all SNPs with MAF > 1% within a 2MB window centered on the lead SNP.
 
 module load samtools
 module load bcftools

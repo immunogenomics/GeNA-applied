@@ -5,9 +5,10 @@
 # by the simulated genotype, for each phenotype we permuted genotype values for                                                         
 # 1%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80% and 100% of samples. For each                                                              
 # of these ten tiers of sample count to permute, the script will generate 'nsim'                                                        
-# genotype permutations (simulates). For each simulate, we selected the given 
-# number of samples at random, and permuted genotype values among those samples 
-# at random. As the count of samples included in the permutation increases, 
+# genotype permutations (simulates). For each simulate, we selected the samples of 
+# desired count to permute at random with equal probability among all samples. We
+# permuted genotype values among the selected samples at random.
+# As the count of samples included in the permutation increases, 
 # the phenotypic variance explained by the resulting simulated SNP decays. 
 
 import numpy as np
@@ -44,7 +45,7 @@ traits.columns = ["T"+str(i+1) for i in np.arange(traits.shape[1])]
 gtype_meta_all=pd.DataFrame({})
 sim_gtypes_all=pd.DataFrame({})
 
-# genotype frequencies for this maf at hwe
+# genotype frequencies for this maf at HW equilibrium
 q = maf
 p = 1 - q
 freq_AA = q**2

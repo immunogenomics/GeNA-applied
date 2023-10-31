@@ -5,7 +5,7 @@ module load bcftools
 
 chr=22
 
-# Pull MAF information for all candidate snps (already passed MAF 5% threshold) on chr 22 
+# Pull MAF information for all candidate snps used for csaQTL GWAS (already passed MAF 5% threshold) on chr 22 
 in_filename="/data/srlab/lrumker/datasets/onek1k/geno/1K1K.phased.chr${chr}.phased.mm3.imputed.dose.snpQC_MAF5.renamed.vcf.gz"
 out_filename="/data/srlab/lrumker/MCSC_Project/cna-qtl/null/mafs/1K1K.chr${chr}.info.txt"
 

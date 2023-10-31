@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script runs ANNOVAR to annotate all variants in the cis region around each locus.
+# This script runs ANNOVAR to annotate all variants in the cis region around each csaQTL.
 
 cd /data/srlab/lrumker/annovar/
 

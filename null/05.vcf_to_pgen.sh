@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Converts permuted genotypes to pfile in preparation for GeNA
 for celltype in "Myeloid" "T" "NK" "B" "allcells"
 do
     for MAF_group in "MAF5" "contMAF" "MAF1"

@@ -1,19 +1,21 @@
 # This script defines independent loci and exports the lead SNP for each locus, 
 # based on a set of input summary statistics. For all SNPs with associations that pass
-# the genome-wide significance threshold, SNPs are sorted in descending order by p-value. 
+# the genome-wide significance threshold, SNPs are sorted by p-value. 
 # The SNP with the lowest p-value is retained as the lead SNP for the first locus. Other 
 # SNPs within a 1MB window centered on the lead SNP or with LD>0.8 to the lead SNP 
 # (computed using genotyping within the cohort) are removed. Among the remaining SNPs,
 # the SNP with the lowest p-value is selected as the lead SNP for the second locus, and so on.
 #
 # Inputs
-#   celltype: title for the GWAS; in our case we distinguish by celltype label
-#   outfile: filepath to store GeNA summary statistics file subset to resulting lead SNPs
+#   celltype: title for the GWAS; in our case we distinguish by major cell type label
+#   outfile: filepath to store GeNA summary statistics file subset to the identified lead SNPs
 #   p_thresh: threshold for genome-wide significance
 #   gwas_res: filepath to GeNA summary statistics file
 #   gtypes: filepath to a paired set of files
-#       one with the additional suffix '.vcf.gz' is expected as a gzipped vcf file with genotype information 
+#       one with the additional suffix '.vcf.gz' is expected as a gzipped vcf file
 #       one with the additional suffix '.DS.vcf.gz' is expected as matching gzipped file with genotype dose only
+#             Expected format is SNPs x Individuals with SNP ID row names present but no column names
+#             Each value is expected to be the dose of alternative allele for the given SNP in the given Individual
 #   n_gtype_header: number of header lines (to ignore) in the VCF genotype file
 
 import argparse
@@ -63,7 +65,7 @@ for sel_chr in np.arange(1,23):
     G_chr = [int(G_meta.index[i].split(":")[0]) for i in np.arange(G_meta.shape[0])]
     G = G.loc[G_chr==sel_chr,:]
     G_meta = G_meta.loc[G_chr==sel_chr,:]
-    res['MAF'] = G_meta.reindex(index=res.ID.values).loc[:,'MAF'].values #G_meta.loc[res.ID.values,'MAF'].values
+    res['MAF'] = G_meta.reindex(index=res.ID.values).loc[:,'MAF'].values 
     res['MAF'] = [float(res.MAF.values[i]) for i in np.arange(res.shape[0])]
 
     # Sort G and res into decreasing order by p-value

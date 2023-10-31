@@ -3,13 +3,17 @@ import pandas as pd
 import numpy as np
 np.random.seed(0)
 
-# Parse Arguments                                                                                                                                                                                 
+# This script takes an input VCF file and for each SNP generates nperm permutations
+# of the genotype dose values across samples 
+# Note: output file does not include VCF header, which is added subsequently
+
+# Parse Arguments                                                                                                                            
 parser = argparse.ArgumentParser()
 parser.add_argument("--infile",type=str)
 parser.add_argument("--outfile",type=str)
 parser.add_argument("--nperm",type=int)
 parser.add_argument("--n_header",type=int)
-parser.add_argument("--nampc_file",type=str)
+parser.add_argument("--nampc_file",type=str) # imported to include only genotypes for samples retained in the csaQTL gwas
 args = parser.parse_args()
 print('\n\n****')
 print(args)

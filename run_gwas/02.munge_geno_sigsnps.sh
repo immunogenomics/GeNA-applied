@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script identifies the SNPs passing a 5e-8 threshold for genome-wide significant csaQTLs
+# This script identifies the SNPs passing a p<5e-8 threshold for genome-wide significant csaQTLs
 # ("sigsnps") and generates a set of small genotype data objects storing only information for those SNPs
 
 # List alleles that passed a genome-wide threshold for association 

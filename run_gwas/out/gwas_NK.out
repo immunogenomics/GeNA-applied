@@ -1,12 +1,12 @@
-Sender: LSF System <lsfadmin@cmu157>
-Subject: Job 806120: <gwas_NK> Done
+Sender: LSF System <lsfadmin@cn008>
+Subject: Job 940399: <gwas_NK> Done
 
 Job <gwas_NK> was submitted from host <cn004> by user <lar24> in cluster <cmucluster>.
-Job was executed on host(s) <cmu157>, in queue <big>, as user <lar24> in cluster <cmucluster>.
+Job was executed on host(s) <cn008>, in queue <big>, as user <lar24> in cluster <cmucluster>.
 </PHShome/lar24> was used as the home directory.
 </data/srlab/lrumker/MCSC_Project/cna-qtl/GeNA> was used as the working directory.
-Started at Thu Sep  7 14:39:31 2023
-Results reported at Thu Sep  7 14:48:43 2023
+Started at Wed Oct 25 22:29:36 2023
+Results reported at Wed Oct 25 22:36:49 2023
 
 Your job looked like:
 
@@ -19,9 +19,9 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time   :    827.91 sec.
-    Max Memory :      2149 MB
-    Max Swap   :     48639 MB
+    CPU time   :    658.94 sec.
+    Max Memory :      1973 MB
+    Max Swap   :     64744 MB
 
     Max Processes  :        71
     Max Threads    :        72
@@ -49,9 +49,9 @@ Options in effect:
   --pheno /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_NK/nampcs.csv
   --require-pheno
 
-Start time: Thu Sep  7 14:39:40 2023
-96728 MiB RAM detected; reserving 48364 MiB for main workspace.
-Using up to 12 threads (change this with --threads).
+Start time: Wed Oct 25 22:29:52 2023
+128936 MiB RAM detected; reserving 64468 MiB for main workspace.
+Using up to 24 threads (change this with --threads).
 972 samples (0 females, 0 males, 972 ambiguous; 972 founders) loaded from
 /data/srlab/lrumker/datasets/onek1k/geno/plink/onek1k.QCed_MAF5.all_chr.psam.
 6437505 variants loaded from
@@ -65,7 +65,7 @@ Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%
 Results written to
 /data/srlab/lrumker/MCSC_Project/cna-qtl/results/gwas_NK/plink_per_nampc/NAM.<phenotype
 name>.glm.linear .
-End time: Thu Sep  7 14:41:29 2023
+End time: Wed Oct 25 22:31:27 2023
 Gathering metrics across NAM-PCs
 Performing multi-NAM-PC tests
 Assembling GeNA results file

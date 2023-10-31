@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Calls a script to define the real single-cell state abundance phenotypes
+# Calls a script to quantify per-sample values for real cell state abundance phenotypes
 # within each data object
 
 for majortype in "allcells" "T" "B" "NK" "Myeloid"

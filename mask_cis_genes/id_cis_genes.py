@@ -24,10 +24,7 @@ celltype = args.celltype
 all_loci = pd.read_table(args.loci)
 
 print("importing GTF")
-# gencode.v38lift37.annotation.gtf.gz #gencode.v38.primary_assembly.annotation.gtf
 gtf = GTF.dataframe(args.gtf_path)
-
-import pdb;pdb.set_trace()
 
 for i_snp in np.arange(all_loci.shape[0]):
 

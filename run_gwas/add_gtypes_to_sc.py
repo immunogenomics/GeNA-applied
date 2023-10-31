@@ -4,7 +4,9 @@
 # Inputs
 #   sc_object: filepath to a single-cell data object in multianndata format
 #   gtypes: filepath to a gzipped VCF file containing only dose information for the SNPs of interest
-#   gtype_samples: list of sample ID corresponding to the rows in gtypes
+#        Expected format is SNPs x Samples with SNP ID row names present but no column names (see gtype_samples)
+#        Each value is expected to be the dose of alternative allele for the given SNP in the given Sample (one per individual in the cohort)
+#   gtype_samples: list of sample IDs corresponding to order of columns in 'gtypes' (must be the same value set as d.samplem.index for 'sc_object')
 #   outfile: filepath to save a single-cell object with genotype information added to samplem attribute
 
 import argparse

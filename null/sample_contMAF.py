@@ -7,7 +7,7 @@ np.random.seed(0)
 
 # Parse Arguments                                                                                                       
 parser = argparse.ArgumentParser()
-parser.add_argument("--snp_info",type=str)
+parser.add_argument("--snp_info",type=str) # for MAF information
 parser.add_argument("--prev_snps",type=str) # to exclude these snps
 parser.add_argument("--outfile",type=str)
 parser.add_argument("--min_MAF",type=float)
