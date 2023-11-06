@@ -9,7 +9,7 @@ res_folder="/data/srlab/lrumker/MCSC_Project/cna-qtl/mask_cis/results/"
 
 celltypes=( "Myeloid" "NK" "NK" "NK" "NK")
 lead_snps=( "15:80263217:C:T" "2:111851212:C:T" "11:128070535:A:G" "12:10583611:C:T" "19:16441973:G:A" )
-n_snps=1 #${#lead_snps[@]}
+n_snps=${#lead_snps[@]}
 
 for i in $(eval echo "{0..$(($n_snps-1))}")
 do
