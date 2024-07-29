@@ -9,6 +9,7 @@ We provide code and analyses supporting the `GeNA` manuscript. We provide script
 - Examine cell state abundance associations to polygenic risk scores (`prs`)
 - Evaluate the sensitivity of our results to various aspects of the primary analysis (`ccg_retained`, `k_sensitivity`, `conditional_testing` folders)
 - Apply `GeNA` to a dataset of cells in early neural differentiation (`neural_dset` folder) 
+
 We also provide the `notebooks` used to generate figures and key reported values.
 
 # Citation
