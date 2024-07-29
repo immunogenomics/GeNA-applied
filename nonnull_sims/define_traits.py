@@ -78,7 +78,7 @@ traits = np.concatenate([traits, hPC_traits])
 
 # cell type specific gene expression program
 for celltype in celltypes:
-    celltype_d = ad.AnnData(d.obsm['harmpca'][d.obs[celltype_col].values==celltype,:20]) # standardize?
+    celltype_d = ad.AnnData(d.obsm['harmpca'][d.obs[celltype_col].values==celltype,:20])
     sc.tl.pca(celltype_d)
     for i_celltype_PC in np.arange(n_celltype_PCs):
         d.obs[celltype+"_PC"+str(i_celltype_PC+1)] = np.repeat(np.nan, d.obs.shape[0])

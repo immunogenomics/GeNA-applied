@@ -1,12 +1,14 @@
 # In this repository
 We provide code and analyses supporting the `GeNA` manuscript. We provide scripts to:
-- Apply `GeNA` to real single-cell profiling and simulated genotypes to evaluate `GeNA`'s calibration (type I error, see `null` folder) and statsitical power (see `nonnull_sims` folder)
-- Apply `GeNA` to identify cell state abundance QTLs (csaQTLs) in the OneK1K dataset (see `run_gwas`, `leadsnps_perm`, `suggestive_loci`, `retest_subcohorts`, `molecularQTLs` folders)
-- Test associations to each lead SNP in single-cell objects with cis-genes removed (see `mask_cis_genes`)
-- Perform GWAS of cluster-based cell type proportion traits for comparison (see `cluster_gwas`)
-- Evaluate the replication by `GeNA` of csaQTLs previously identified using flow cytometry (`published_csaQTLs`)
-- Evaluate the replication of csaQTLs from the OneK1K discovery cohort in five replication cohorts (`replication`)
-- Examine cell state abundance associations to polygenic risk scores using CNA (`prs`)
+- Apply `GeNA` to real single-cell profiling and simulated genotypes to evaluate `GeNA`'s calibration (`null` folder) and statistical power (`nonnull_sims` folder)
+- Apply `GeNA` to identify cell state abundance QTLs (csaQTLs) in the OneK1K dataset (`run_gwas`, `leadsnps_perm`, `suggestive_loci`, `retest_subcohorts`, `molecularQTLs` folders)
+- Test associations to each lead SNP in single-cell objects with cis-genes removed (`mask_cis_genes` folder) or suggestive trans-eGenes removed (`mask_trans_eGenes` folder)
+- Perform GWAS of cluster-based cell type proportion traits for comparison (`cluster_gwas` folder)
+- Evaluate the replication of csaQTLs from the OneK1K discovery cohort in five replication cohorts (`replication` folder)
+- Evaluate the replication of csaQTLs previously identified using flow cytometry in our neighborhood-based framework for single-cell data (`published_csaQTLs` folder)
+- Examine cell state abundance associations to polygenic risk scores (`prs`)
+- Evaluate the sensitivity of our results to various aspects of the primary analysis (`ccg_retained`, `k_sensitivity`, `conditional_testing` folders)
+- Apply `GeNA` to a dataset of cells in early neural differentiation (`neural_dset` folder) 
 We also provide the `notebooks` used to generate figures and key reported values.
 
 # Citation
@@ -22,6 +24,7 @@ All datasets used in these analyses are previously published:
 2. Perez, R. K. et al. Single-cell RNA-seq reveals cell type-specific molecular and genetic associations to lupus. Science (American Association for the Advancement of Science) 376, eabf1970–eabf1970 (2022).
 3. Oelen, R. et al. Single-cell RNA-sequencing of peripheral blood mononuclear cells reveals widespread, context-specific gene expression regulation upon pathogenic exposure. Nat Commun 13, 3267 (2022).
 4. Randolph, H. E. et al. Genetic ancestry effects on the response to viral infection are pervasive but cell type specific. Science 374, 1127–1133 (2021).
+5. Jerber, J. et al. Population-scale single-cell RNA-seq profiling across dopaminergic neuron differentiation. Nat. Genet. 53, 304–312 (2021).
 
 # Contact
 Please contact Laurie Rumker (Laurie_Rumker AT hms.harvard.edu) with any questions about these analyses.

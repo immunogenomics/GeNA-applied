@@ -1,5 +1,0 @@
-#!/bin/bash
-
-command="python -u define_and_filter_traits.py" #orru_traits_QC.py
-echo $command
-eval $command
