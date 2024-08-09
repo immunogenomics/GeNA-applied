@@ -22,7 +22,7 @@ do
     then
 	mkdir -p ${pwd}/out
 	name="gwas_${celltype}"
-	bsub -J $name -q big \
+	bsub -J $name -q big -n 1 -R 'rusage[mem=17000:swp=25000]' \
             -oo ${pwd}/out/${name}.out \
             -eo ${pwd}/out/${name}.err \
             -R 'select[hname!=cn001]' \
