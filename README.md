@@ -22,6 +22,7 @@ This work was completed with GeNA version v1.0.0, which has the following depend
 - PLINK version 2.00a2.3
 - CNA version 0.1.6
 - Rmpfr version 0.8-7
+Scripts in this repo will not run smoothly with later versions of GeNA, which we updated to maintain compatability with new input/output formatting in CNA.
 
 # To use GeNA
 Please refer to the `GeNA` repository at [immnogenomics/GeNA](https://github.com/immunogenomics/GeNA)
