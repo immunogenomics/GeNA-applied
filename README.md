@@ -1,5 +1,5 @@
 # In this repository
-We provide code and analyses supporting the `GeNA` manuscript. We provide scripts to:
+We provide code and analyses supporting the `GeNA` publication. We provide scripts to:
 - Apply `GeNA` to real single-cell profiling and simulated genotypes to evaluate `GeNA`'s calibration (`null` folder) and statistical power (`nonnull_sims` folder)
 - Apply `GeNA` to identify cell state abundance QTLs (csaQTLs) in the OneK1K dataset (`run_gwas`, `leadsnps_perm`, `suggestive_loci`, `retest_subcohorts`, `molecularQTLs` folders)
 - Test associations to each lead SNP in single-cell objects with cis-genes removed (`mask_cis_genes` folder) or suggestive trans-eGenes removed (`mask_trans_eGenes` folder)
@@ -13,8 +13,15 @@ We provide code and analyses supporting the `GeNA` manuscript. We provide script
 We also provide the `notebooks` used to generate figures and key reported values.
 
 # Citation
-The `GeNA` manuscript can be found and cited at
-[link to preprint]
+If you use `GeNA` in your work, you can cite our paper [here](https://www.nature.com/articles/s41588-024-01909-1) 
+
+# Dependencies
+This work was completed with GeNA version v1.0.0, which has the following dependencies:
+- Python version 3.8.10
+- R version 4.1.1
+- PLINK version 2.00a2.3
+- CNA version 0.1.6
+- Rmpfr version 0.8-7
 
 # To use GeNA
 Please refer to the `GeNA` repository at [immnogenomics/GeNA](https://github.com/immunogenomics/GeNA)
